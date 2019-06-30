@@ -63,19 +63,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../src/styles.scss */
+/* line 3, ../src/style.scss */
 h1 {
   font: xx-large/1.5 sans-serif;
   text-align: center;
 }
 
-/* line 8, ../src/styles.scss */
+/* line 8, ../src/style.scss */
 footer {
   margin-top: 1ex;
   border-top: 1px black solid;
 }
 
-/* line 13, ../src/styles.scss */
+/* line 13, ../src/style.scss */
 small {
   font-size: smaller;
+}
+
+@media (max-width: 850px) {
+  /* line 17, ../src/style.scss */
+  .jxgbox {
+    width: 99vw;
+    height: 99vw;
+  }
+}
+@media (min-width: 851px) {
+  /* line 17, ../src/style.scss */
+  .jxgbox {
+    width: 25em;
+    height: 25em;
+  }
 }

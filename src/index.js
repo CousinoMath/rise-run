@@ -1,8 +1,8 @@
 const board = JXG.JSXGraph.initBoard('jxgbox', {
     boundingbox: [-4, 6, 6, -4], axis: true
 });
-const runSlider = board.create('slider', [[1, 4], [4, 4], [0.001, 1, 5]], { name: 'run' });
-const slopeSlider = board.create('slider', [[1, 3], [4, 3], [-5, 1, 5]], { name: 'slope' });
+const runSlider = board.create('slider', [[-3, 4.5], [0, 4.5], [0.001, 1, 5]], { name: 'run' });
+const slopeSlider = board.create('slider', [[-3, 3.5], [0, 3.5], [-5, 1, 5]], { name: 'slope' });
 function f(x) {
     const run = runSlider.Value();
     const pos = x >= 0;
