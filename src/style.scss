@@ -1,26 +1,45 @@
 @import "compass/reset";
 
 h1 {
-    font: xx-large/1.5 sans-serif;
-    text-align: center;
+  font: xx-large/1.5 sans-serif;
+  text-align: center;
+}
+
+form {
+  display: table;
+}
+
+form div.input {
+  display: table-row;
+  vertical-align: middle;
+}
+
+form div.input * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+form div.input label {
+  text-align: right;
+  width: 5.5em;
 }
 
 footer {
-    margin-top: 1ex;
-    border-top: 1px black solid;
+  margin-top: 1ex;
+  border-top: 1px black solid;
 }
 
 small {
-    font-size: smaller;
+  font-size: smaller;
 }
 
-.jxgbox {
-    @media (max-width: 850px) {
-        width: 99vw;
-        height: 99vw;
-    }
-    @media (min-width: 851px) {
-        width: 25em;
-        height: 25em;
-    }
+#jxgbox {
+  @media (max-width: 850px) {
+    width: 99vw;
+    height: 99vw;
+  }
+  @media (min-width: 851px) {
+    width: 25em;
+    height: 25em;
+  }
 }
